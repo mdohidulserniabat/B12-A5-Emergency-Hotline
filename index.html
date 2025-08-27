@@ -42,7 +42,7 @@
     </header>
     <!-- banner section started -->
     <div
-        class="banner  bg-[linear-gradient(90deg,rgba(1,50,35,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)] flex flex-col items-center justify-center py-5 container mx-auto">
+        class="banner  bg-[linear-gradient(90deg,rgba(1,50,35,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)] flex flex-col items-center justify-center py-5 container mx-auto ">
         <img src="./assets/logo.png" class="h-16" alt="">
         <h1 class="text-white font-semibold text-2xl sm:text-[40px]">জরুরি সেবা ডিরেক্টরি</h1>
         <p class="text-white font-semibold text-center sm:text-xl">Government Emergency Services at Your Fingertip – A
@@ -51,8 +51,8 @@
 
     </div>
     <!-- card section starte here -->
-    <div class="card-container container mx-auto bg-[#f5fff6] grid grid-cols-1 sm:grid-cols-4 gap-6 p-5 ">
-        <div class="card shadow-sm bg-white mt-10 rounded-lg pt-5">
+    <div class="card-container container mx-auto bg-[#f5fff6] grid grid-cols-1 sm:grid-cols-4 gap-6 p-5  ">
+        <div class="card shadow-sm bg-white mt-3 md:mt-10 rounded-lg pt-5">
             <div class="card-head flex items-center justify-between mx-4">
                 <div class="bg-[#ffe3e2] p-2 rounded-2xl">
                     <img src="./assets/emergency.png" class="h-8 " alt="">
@@ -73,7 +73,7 @@
             </div>
 
         </div>
-        <div class="card shadow-sm bg-white mt-10 rounded-lg pt-5">
+        <div class="card shadow-sm bg-white mt-3 md:mt-10 rounded-lg pt-5">
             <div class="card-head flex items-center justify-between mx-4">
                 <div class="bg-[#ffe3e2] p-2 rounded-2xl">
                     <img src="./assets/police.png" class="h-8 " alt="">
@@ -95,7 +95,7 @@
             </div>
 
         </div>
-        <div class="card shadow-sm bg-white mt-10 rounded-lg pt-5">
+        <div class="card shadow-sm bg-white mt-3 md:mt-10 rounded-lg pt-5">
             <div class="card-head flex items-center justify-between mx-4">
                 <div class="bg-[#ffe3e2] p-2 rounded-2xl">
                     <img src="./assets/fire-service.png" class="h-8 " alt="">
@@ -118,21 +118,20 @@
             </div>
 
         </div>
-        <div class="card shadow-sm sm:row-span-3 bg-white mt-10 rounded-lg pt-5">
+        <div class="card shadow-sm sm:row-span-3 bg-white mt-3 md:mt-10 rounded-lg pt-5 order-first sm:order-none">
             <div class="card-head flex items-center justify-between mx-4">
                 <div class="">
                     <h1 class="text-2xl"><span><i class="fa-regular fa-clock"></i></span>Call History</h1>
                 </div>
-                <button class="btn btn-active btn-success rounded-3xl py-5 px-10">Clear</button>
+                <button id="clear-history-btn" class="btn btn-active btn-success rounded-3xl py-5 px-10">Clear</button>
             </div>
-            <div class="card-body">
-
-
+           <div id="history-container" class="">
+            <!-- <div class="div">
+                <h1>জাতীয় জরুরি সেবা</h1>
+                <p class="text-[#5c5c5c]">999</p>
             </div>
-            <div class="card-footer pb-3 flex gap-4 mx-4 justify-center ">
-
-
-            </div>
+            <p>11:36:58 AM</p> -->
+           </div>
 
         </div>
         <div class="card shadow-sm bg-white mt-4 rounded-lg pt-5">
