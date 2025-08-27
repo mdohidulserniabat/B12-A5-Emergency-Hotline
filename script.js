@@ -39,7 +39,7 @@ const callBtns = document.getElementsByClassName("call-btn")
 for (const callBtn of callBtns) {
     callBtn.addEventListener("click", function () {
         if (coinBalance < 20) {
-            alert("Insuffcent Balance")
+            alert("Insufficient Balance")
             return
         }
         const card = this.closest(".card");
